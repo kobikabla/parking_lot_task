@@ -1,10 +1,9 @@
 import os
 
+import configuration.dataConfig
 from rules import valedate_plate_num
 from utils.sqlite3_DB_connection import DB_connection
 from workflow.SQLiteflow import decision_to_SQL_qury, insert_row_to_DB
-
-
 
 
 def main_flow(file_name,DBconection):
@@ -19,5 +18,5 @@ def run_for_all_images_in_folder(folder,DB_connection):
         main_flow(file_name=f'{folder}/{file}',DBconection=DB_connection)
 
 
-run_for_all_images_in_folder(folder='./images',DB_connection=DB_connection())
+
 
