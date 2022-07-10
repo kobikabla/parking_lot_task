@@ -1,5 +1,6 @@
 
 
+
 def insert_row_to_DB(Dbconection, qury):
     cur = Dbconection.cursor()
     cur.execute(qury)
