@@ -5,7 +5,7 @@ import sqlite3
 
 
 def create_decision_DB():
-    con = sqlite3.connect('''.\\DB\\parkinglotDB.db''')
+    con = sqlite3.connect('''parkinglotDB.db''')
     cur = con.cursor()
     # Create table
     cur.execute('''CREATE TABLE decision

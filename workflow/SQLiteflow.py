@@ -27,4 +27,3 @@ def decision_to_SQL_qury(decision):
     return qury
 
 
-
